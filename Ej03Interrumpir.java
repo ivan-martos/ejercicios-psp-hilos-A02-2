@@ -18,6 +18,8 @@ public class Ej03Interrumpir {
     /** Pide al hilo que termine y espera a que lo haga. */
     static void parar(Thread hilo) throws InterruptedException {
         // TODO (2 líneas): pide al hilo que termine y espera a que lo haga
+        hilo.interrupt();
+        hilo.join();
     }
 
     /** Lee la temperatura cada medio segundo hasta que lo interrumpen. Ya está hecho. */

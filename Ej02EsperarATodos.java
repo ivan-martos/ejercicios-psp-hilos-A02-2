@@ -23,6 +23,15 @@ public class Ej02EsperarATodos {
         List<Thread> hilos = new ArrayList<>();
         // TODO (8 líneas): lanza un hilo por carpeta, con la tarea copiar(carpeta), y guárdalo en
         //     la lista hilos. Cuando estén todos lanzados, espera a que terminen todos
+       for(String carpeta: carpetas){
+           Thread hilo = new Thread(()-> copiar(carpeta));
+           hilos.add(hilo);
+           hilo.start();
+       }
+       //esperar a que terminen todos  los hilos
+        for (Thread hilo: hilos){
+            hilo.join();
+        }
     }
 
     /** Simula la copia de una carpeta: tarda un segundo. Ya está hecho. */

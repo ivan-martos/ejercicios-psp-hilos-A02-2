@@ -53,6 +53,7 @@ public class Ej05Prioridades {
         // TODO (9 líneas): crea un Thread cuya tarea sume 1 a una variable local cuenta mientras
         //     System.currentTimeMillis() sea menor que fin y, al terminar, guarde la cuenta en
         //     cuentas[indice]. Ponle la prioridad y devuélvelo
+
         return null;  // provisional, para que compile: bórralo
     }
 }
