@@ -12,13 +12,20 @@ public class CuentaBancaria {
     /** Suma la cantidad al saldo. */
     public void ingresar(int cantidad) {
         // TODO (6 líneas): suma la cantidad al saldo con el cerrojo cogido, como en getSaldo()
+        cerrojo.lock();
+        try{
+            saldo += cantidad;
+        }finally {
+            cerrojo.unlock();
+        }
     }
 
     /** Resta la cantidad si hay saldo suficiente. Devuelve true si la ha podido retirar. */
     public boolean retirar(int cantidad) {
         // TODO (10 líneas): con el cerrojo cogido, si el saldo no llega devuelve false; si llega,
         //     resta la cantidad y devuelve true
-        return false;  // provisional, para que compile: bórralo
+
+        return true;
     }
 
     /** Devuelve el saldo. Ya está hecho: es el modelo para los otros dos métodos. */

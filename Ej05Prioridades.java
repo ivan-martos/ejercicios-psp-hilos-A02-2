@@ -54,6 +54,8 @@ public class Ej05Prioridades {
         //     System.currentTimeMillis() sea menor que fin y, al terminar, guarde la cuenta en
         //     cuentas[indice]. Ponle la prioridad y devuélvelo
 
-        return null;  // provisional, para que compile: bórralo
+        return null;
+
     }
+
 }

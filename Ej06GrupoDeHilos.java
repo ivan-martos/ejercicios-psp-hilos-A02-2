@@ -1,3 +1,4 @@
+import java.util.concurrent.Executor;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
@@ -23,6 +24,7 @@ public class Ej06GrupoDeHilos {
     static void prepararTodos(String[] pedidos) {
         // TODO (5 líneas): crea con try-with-resources un grupo de EMPLEADOS hilos y entrégale una
         //     tarea preparar(pedido) por cada pedido
+
     }
 
     /** Simula la preparación de un pedido: tarda medio segundo. Ya está hecho. */

@@ -16,9 +16,8 @@ public class Ej01PrimerHilo {
     static Thread lanzar() {
         // TODO (3 líneas): crea un Thread cuya tarea sea una lambda que llame a saludar(),
         //     inícialo y devuélvelo
-        Thread hilo = new Thread(()-> saludar());
-        hilo.start();
-        return hilo;
+
+        return null;
     }
 
     /** Escribe tres saludos con el nombre del hilo que lo ejecuta. Ya está hecho. */

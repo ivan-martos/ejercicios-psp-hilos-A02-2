@@ -32,6 +32,8 @@ public class Ej09Semaforo {
         //     segundos() + " s: el cliente " + cliente + " entra en un probador";
         //     tarda un segundo (Thread.sleep) y deja libre el probador aunque haya una excepción.
         //     Si interrumpen al hilo, termina
+
+
     }
 
     /** Segundos transcurridos desde que empezó el programa. Ya está hecho. */

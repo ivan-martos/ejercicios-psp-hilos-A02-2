@@ -26,9 +26,8 @@ public class Ej04EstadosYDemonio {
     static Thread crearLatido() {
         // TODO (3 líneas): crea un Thread cuya tarea sea latir(), haz que sea un hilo demonio y
         //     devuélvelo
-        Thread hilo = new Thread(()-> latir());
-        hilo.start();
-        return hilo;
+
+        return null;
     }
 
     /** Escribe «latido» cada 300 ms, para siempre. Ya está hecho. */

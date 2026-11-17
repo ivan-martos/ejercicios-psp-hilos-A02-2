@@ -1,9 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.ExecutionException;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.Future;
+import java.util.concurrent.*;
 
 /**
  * Ejercicio 7. Tareas con resultado: Callable y Future.
@@ -35,6 +32,8 @@ public class Ej07CallableFuture {
         //     tarea contarPrimos(desde, hasta) por cada tramo (el tramo i va de i * tamano + 1 a
         //     (i + 1) * tamano) y guarda los Future en una lista. Cuando las hayas entregado
         //     todas, suma en total lo que devuelve cada una
+
+
         return total;
     }
 
